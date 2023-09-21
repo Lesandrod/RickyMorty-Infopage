@@ -10,7 +10,7 @@ const Navbar = () => {
     ];
     return (
         <div>
-            <nav className="bg-gray-800 p-4">
+            <nav className="bg-gray-800 p-1 fixed top-0 w-full z-50">
                 <div className="container mx-auto flex justify-between items-center">
                     <a aria-current="page" aria-label="home page" className="header__Link-sc-1lpxlh0-2 iAukjk home-icon" href="/">
                         <div className="text-white group inline-block p-2 transition duration-300 ease-in-out transform hover:text-lime-400">
@@ -21,8 +21,6 @@ const Navbar = () => {
                         {links.map((link) => (
                             <Link key={link.name}
                                
-                                
-                                
                                 to={link.path}
                                 
                                 className={`${link.path === href ? 'text-lime-400 text-lg hover:text-lime-400 transition duration-300 ease-in-out' : 'text-white text-lg hover:text-lime-400 transition duration-300 ease-in-out'}`}>{link.name}</Link>

@@ -33,7 +33,8 @@ function CharacterList() {
                     type="button"
                     onClick={PreviousPage}
                     disabled={initialPage === 1}
-                    className="flex items-center justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+
+                    className={ initialPage === 1 ? 'cursor-not-allowed flex items-center cursor-block justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg dark:bg-gray-800 dark:border-gray-700  ':'flex items-center cursor-block justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'}
                 >
                     <HiArrowLeft />
                 </button>
@@ -42,7 +43,7 @@ function CharacterList() {
                     type="button"
                     onClick={NextPage}
                     disabled={initialPage === totalPages}
-                    className="flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    className={initialPage === totalPages ? 'cursor-not-allowed flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400  ':'flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'}
                 >
                     <HiArrowRight />
                 </button>
@@ -61,7 +62,7 @@ function CharacterList() {
                     <div className="flex justify-center items-center mt-10 mb-10">
                         <img
                             src="/loading.gif"
-                            width={200} />
+                            width={206} />
                     </div>
 
                 }
@@ -74,7 +75,7 @@ function CharacterList() {
                     type="button"
                     onClick={PreviousPage}
                     disabled={initialPage === 1}
-                    className="flex items-center justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    className={ initialPage === 1 ? 'cursor-not-allowed flex items-center cursor-block justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg dark:bg-gray-800 dark:border-gray-700  ':'flex items-center cursor-block justify-center mr-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'}
                 >
                     <HiArrowLeft />
                 </button>
@@ -83,7 +84,7 @@ function CharacterList() {
                     type="button"
                     onClick={NextPage}
                     disabled={initialPage === totalPages}
-                    className="flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    className={initialPage === totalPages ? 'cursor-not-allowed flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400  ':'flex items-center justify-center ml-5 px-3 h-8 p-5 ml-0 text-3xl leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'}
                 >
                     <HiArrowRight />
                 </button>
